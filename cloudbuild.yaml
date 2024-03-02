@@ -1,0 +1,5 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '--no-cache', '--build-arg', 'GOOGLE_CLOUD_PROJECT=$_GCP_PROJECT_ID', '-t', 'gcr.io/$PROJECT_ID/$_GCP_CLOUD_RUN_APP_NAME', '.']
+images:
+  - 'gcr.io/$PROJECT_ID/$_GCP_CLOUD_RUN_APP_NAME'
