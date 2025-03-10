@@ -4,8 +4,7 @@ import chrome from 'selenium-webdriver/chrome';
 export const chromeDriver = (): ThenableWebDriver => {
   const options = new chrome.Options();
   options.headless();
-  options.addArguments('window-size=1400x1200');
-  options.addArguments('--no-sandbox');
+  options.addArguments('window-size=2800x1400');
   options.addArguments('--enable-file-cookies');
   options.addArguments('--disable-dev-shm-usage');
   options.addArguments('--disable-blink-features=AutomationControlled');
